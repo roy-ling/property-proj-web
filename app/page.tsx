@@ -16,7 +16,7 @@ import { useState } from "react";
 
 // Swiper imports
 import type { Swiper as SwiperType } from "swiper";
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Swiper styles
@@ -152,9 +152,11 @@ export default function LandingPage() {
           <div className="max-w-5xl mx-auto text-center text-white">
             <div className="animate-fade-in">
               <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-12 leading-tight tracking-tight">
-                LUXURY TROPICAL
+                KOH PHANGAN
                 <br />
-                <span className="text-accent-300">PARADISE</span>
+                <span className="text-accent-300">
+                  Welcome to luxury tropical paradise
+                </span>
               </h1>
               <Button
                 size="lg"
@@ -186,15 +188,18 @@ export default function LandingPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-fade-in">
             <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
-              Premium Collection
+              Investment Opportunity
             </Badge>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-secondary-700">
-              Our Exclusive Gallery
+              Live the Dream and Grow Your Wealth
             </h2>
             <p className="text-xl text-secondary-500 max-w-3xl mx-auto leading-relaxed">
-              Explore our stunning collection of luxury tropical properties,
-              each designed to offer the perfect blend of modern sophistication
-              and natural beauty
+              Exclusive opportunity to acquire 11 beachfront units in the prime
+              heart of Chaloklum Fisherman Village, one of Koh Phangan's most
+              desirable locations. Surrounded by stunning beaches, restaurants,
+              shops, and attractions, this property offers a proven profit
+              history with an impressive estimated 13-18% ROI — combining
+              lifestyle appeal with solid investment returns.
             </p>
           </div>
 
@@ -284,11 +289,10 @@ export default function LandingPage() {
               Investment Excellence
             </Badge>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-secondary-700">
-              Premium Benefits
+              A worthy investment in your future.
             </h2>
             <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-              Experience unparalleled luxury and investment security with our
-              comprehensive benefit package
+              An investment opportunity with a low entry threshold.
             </p>
           </div>
 
@@ -298,13 +302,25 @@ export default function LandingPage() {
                 <Award className="w-10 h-10 text-white" />
               </div>
               <h3 className="font-display font-bold text-2xl mb-6 text-secondary-700">
-                Outstanding Service Quality
+                Maximize Returns in Paradise
               </h3>
-              <p className="text-secondary-600 leading-relaxed">
-                Experience exceptional service quality that exceeds expectations
-                with our dedicated team of professionals and comprehensive
-                support throughout your investment journey.
-              </p>
+              <div className="text-secondary-600 leading-relaxed space-y-4">
+                <p>
+                  Secure a rare beachfront investment with the potential to
+                  recoup your capital in as little as 7 years, delivering an
+                  exceptional 13–18% ROI.
+                </p>
+                <p>Unmatched year-round demand and steady rental income.</p>
+                <p>
+                  Turnkey professional management ensures effortless ownership
+                  and hassle-free maintenance.
+                </p>
+                <p>
+                  Prime beachfront position in a thriving, well-developed area —
+                  a magnet for both holidaymakers and long-term tenants seeking
+                  the best of Koh Phangan.
+                </p>
+              </div>
             </Card>
 
             <Card className="text-center p-10 bg-white/80 backdrop-blur-sm border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group rounded-2xl">
@@ -312,13 +328,27 @@ export default function LandingPage() {
                 <Shield className="w-10 h-10 text-white" />
               </div>
               <h3 className="font-display font-bold text-2xl mb-6 text-secondary-700">
-                Full Investment Protection
+                Pre-Construction Investment Opportunity
               </h3>
-              <p className="text-secondary-600 leading-relaxed">
-                Your investment is fully protected with comprehensive insurance
-                coverage, legal guarantees, and our proven track record of
-                delivering exceptional returns.
-              </p>
+              <div className="text-secondary-600 leading-relaxed space-y-4">
+                <p>
+                  Enter at the initial stage of construction and position
+                  yourself to sell at up to 40% higher value upon completion.
+                </p>
+                <p>
+                  Proven capital growth — property values in Thailand continue
+                  to rise steadily year after year.
+                </p>
+                <p>
+                  Full freehold ownership, giving you complete control and
+                  long-term security.
+                </p>
+                <p>
+                  Located in one of Southeast Asia's strongest markets —
+                  Thailand ranks among the top three most developed economies in
+                  the region, alongside Singapore and Malaysia.
+                </p>
+              </div>
             </Card>
 
             <Card className="text-center p-10 bg-white/80 backdrop-blur-sm border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group rounded-2xl">
@@ -326,153 +356,355 @@ export default function LandingPage() {
                 <Home className="w-10 h-10 text-white" />
               </div>
               <h3 className="font-display font-bold text-2xl mb-6 text-secondary-700">
-                Luxury Lifestyle Program
+                Koh Phangan – The Ideal Destination for Modern, Happy Living
               </h3>
-              <p className="text-secondary-600 leading-relaxed">
-                Immerse yourself in the ultimate tropical lifestyle with our
-                exclusive amenities, wellness programs, and concierge services
-                designed for discerning residents.
-              </p>
+              <div className="text-secondary-600 leading-relaxed space-y-4">
+                <p>
+                  In recent years, Koh Phangan has evolved into a vibrant blend
+                  of foreign tourists, long-term visitors, and expats who choose
+                  to stay for 6–12 months or relocate permanently. This unique
+                  mix keeps the island in high demand year-round.
+                </p>
+                <p>
+                  Warm, crystal-clear seas and inviting beaches all year long
+                </p>
+                <p>Tropical climate with endless summer days</p>
+                <p>
+                  Pristine natural beauty — mountains, jungles, rivers, and
+                  waterfalls
+                </p>
+                <p>
+                  Excellent ecology with clean air, fresh produce, and a true
+                  sense of safety
+                </p>
+              </div>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Section 4 - Mixed Content */}
-      <section id="properties" className="py-24 bg-white">
+      {/* Property details section featuring specifications and interior image carousel */}
+      {/* <section id="properties" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           {/* Property Specifications */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
-            <div className="space-y-8 animate-slide-in">
-              <div>
-                <Badge className="mb-4 bg-primary-100 text-secondary-700 border-primary-200 px-4 py-2 text-sm font-medium">
-                  Property Details
-                </Badge>
-                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
-                  Premium Specifications
-                </h3>
-              </div>
-              <div className="space-y-6">
-                <div className="flex justify-between items-center py-4 border-b border-primary-200">
-                  <span className="font-medium text-secondary-600">
-                    Total Living Area
-                  </span>
-                  <span className="font-bold text-xl text-secondary-700">
-                    97.05 M²
-                  </span>
-                </div>
-                <div className="flex justify-between items-center py-4 border-b border-primary-200">
-                  <span className="font-medium text-secondary-600">
-                    Terrace Area
-                  </span>
-                  <span className="font-bold text-xl text-secondary-700">
-                    24.95 M²
-                  </span>
-                </div>
-                <div className="flex justify-between items-center py-4 border-b border-primary-200">
-                  <span className="font-medium text-secondary-600">
-                    Floor Area
-                  </span>
-                  <span className="font-bold text-xl text-secondary-700">
-                    77.75 M²
-                  </span>
-                </div>
-              </div>
-              <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
-                View Detailed Floor Plans
-              </Button>
+      {/* Grid layout for property details and interior images */}
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+        <div className="space-y-8 animate-slide-in">
+          <div>
+            <Badge className="mb-4 bg-primary-100 text-secondary-700 border-primary-200 px-4 py-2 text-sm font-medium">
+          Property Details
+            </Badge>
+            <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+          Premium Specifications
+            </h3>
+          </div>
+          {/* Property specifications list with living areas */}
+      {/* <div className="space-y-6">
+            <div className="flex justify-between items-center py-4 border-b border-primary-200">
+          <span className="font-medium text-secondary-600">
+            Total Living Area
+          </span>
+          <span className="font-bold text-xl text-secondary-700">
+            97.05 M²
+          </span>
             </div>
+            <div className="flex justify-between items-center py-4 border-b border-primary-200">
+          <span className="font-medium text-secondary-600">
+            Terrace Area
+          </span>
+          <span className="font-bold text-xl text-secondary-700">
+            24.95 M²
+          </span>
+            </div>
+            <div className="flex justify-between items-center py-4 border-b border-primary-200">
+          <span className="font-medium text-secondary-600">
+            Floor Area
+          </span>
+          <span className="font-bold text-xl text-secondary-700">
+            77.75 M²
+          </span>
+            </div>
+          </div>
+          {/* Call-to-action button for floor plans */}
+      {/* <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
+            View Detailed Floor Plans
+          </Button>
+        </div>
 
+        {/* Interior images carousel with fade effect */}
+      {/* <div className="relative">
+          <div className="overflow-hidden rounded-2xl shadow-luxury">
+            <Swiper
+          modules={[Navigation, EffectFade]}
+          effect="fade"
+          navigation={{
+            prevEl: ".interior-prev",
+            nextEl: ".interior-next",
+          }}
+          onSwiper={setInteriorSwiper}
+          className="interior-swiper h-96"
+            >
+          {interiorImages.map((image, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative h-full">
+            <img
+              src={image.src || "/placeholder.svg"}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+            {/* Image title overlay */}
+      {/* <div className="absolute bottom-6 left-6 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
+              {image.title}
+            </div>
+              </div>
+            </SwiperSlide>
+          ))}
+            </Swiper>
+          </div>
+
+          {/* Navigation buttons for interior carousel */}
+      {/* <Button
+            size="icon"
+            variant="outline"
+            className="interior-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
+          >
+            <ChevronLeft className="w-5 h-5 text-secondary-600" />
+          </Button>
+          <Button
+            size="icon"
+            variant="outline"
+            className="interior-next absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
+          >
+            <ChevronRight className="w-5 h-5 text-secondary-600" />
+          </Button>
+
+          {/* Thumbnail navigation for quick image selection */}
+      {/* <div className="flex space-x-3 mt-6 justify-center">
+            {interiorImages.map((image, index) => (
+          <button
+            key={index}
+            className="w-20 h-16 rounded-lg overflow-hidden border-2 border-primary-200 hover:border-accent-300 transition-all duration-200"
+            onClick={() => interiorSwiper?.slideTo(index)}
+          >
+            <img
+              src={image.src || "/placeholder.svg"}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </button>
+            ))}
+          </div>
+        </div>
+          </div>
+
+          {/* Lifestyle Section */}
+      {/* Two-column layout for lifestyle content and image */}
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Lifestyle description with call-to-action */}
+      {/* <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-12 rounded-2xl">
+          <Badge className="mb-6 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+            Luxury Lifestyle
+          </Badge>
+          <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+            Tropical Paradise Living
+          </h3>
+          <p className="text-secondary-600 mb-8 leading-relaxed text-lg">
+            Experience the ultimate in tropical luxury living with our
+            thoughtfully designed spaces that seamlessly blend indoor and
+            outdoor living, creating your perfect sanctuary in paradise.
+          </p>
+          <Button className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
+            Discover More
+          </Button>
+        </div>
+
+        {/* Lifestyle image with hover effects */}
+      {/* <div className="relative">
+          <div className="overflow-hidden rounded-2xl shadow-luxury">
+            <img
+          src="/creative-classroom-learning.png"
+          alt="Luxury tropical lifestyle"
+          className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Section 4.5 - Lifestyle Sections */}
+      <section className="py-24 bg-gradient-to-b from-primary-50 to-white">
+        <div className="container mx-auto px-6">
+          {/* Cafés, Bars, and Restaurants */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
-                <Swiper
-                  modules={[Navigation, EffectFade]}
-                  effect="fade"
-                  navigation={{
-                    prevEl: ".interior-prev",
-                    nextEl: ".interior-next",
-                  }}
-                  onSwiper={setInteriorSwiper}
-                  className="interior-swiper h-96"
-                >
-                  {interiorImages.map((image, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="relative h-full">
-                        <img
-                          src={image.src || "/placeholder.svg"}
-                          alt={image.alt}
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute bottom-6 left-6 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
-                          {image.title}
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                <img
+                  src="/tropical-palm-resort.png"
+                  alt="Cafés, bars, and restaurants"
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
-
-              {/* Custom Navigation Buttons */}
-              <Button
-                size="icon"
-                variant="outline"
-                className="interior-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
-              >
-                <ChevronLeft className="w-5 h-5 text-secondary-600" />
-              </Button>
-              <Button
-                size="icon"
-                variant="outline"
-                className="interior-next absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
-              >
-                <ChevronRight className="w-5 h-5 text-secondary-600" />
-              </Button>
-
-              {/* Thumbnail Navigation */}
-              <div className="flex space-x-3 mt-6 justify-center">
-                {interiorImages.map((image, index) => (
-                  <button
-                    key={index}
-                    className="w-20 h-16 rounded-lg overflow-hidden border-2 border-primary-200 hover:border-accent-300 transition-all duration-200"
-                    onClick={() => interiorSwiper?.slideTo(index)}
-                  >
-                    <img
-                      src={image.src || "/placeholder.svg"}
-                      alt={image.alt}
-                      className="w-full h-full object-cover"
-                    />
-                  </button>
-                ))}
+            </div>
+            <div className="space-y-8">
+              <div>
+                <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+                  Dining & Nightlife
+                </Badge>
+                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                  A Vast Number of Cafés, Bars, and Restaurants
+                </h3>
+                <p className="text-secondary-600 leading-relaxed text-lg">
+                  Koh Phangan offers an impressive variety of dining and
+                  nightlife experiences to suit every taste and mood. From
+                  charming beachfront cafés serving fresh coffee and healthy
+                  breakfasts, to vibrant bars with live music and sunset views,
+                  the island is full of inviting spots to relax and socialize.
+                  Visitors and residents alike enjoy an array of international
+                  cuisines, local Thai delicacies, and fresh seafood, ensuring
+                  there's always something new to discover. Whether you're
+                  looking for a laid-back lunch by the sea, a romantic dinner,
+                  or a lively evening out, Koh Phangan's diverse food and drink
+                  scene delivers year-round appeal.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Lifestyle Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-12 rounded-2xl">
-              <Badge className="mb-6 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
-                Luxury Lifestyle
-              </Badge>
-              <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
-                Tropical Paradise Living
-              </h3>
-              <p className="text-secondary-600 mb-8 leading-relaxed text-lg">
-                Experience the ultimate in tropical luxury living with our
-                thoughtfully designed spaces that seamlessly blend indoor and
-                outdoor living, creating your perfect sanctuary in paradise.
-              </p>
-              <Button className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
-                Discover More
-              </Button>
+          {/* Endless Activities */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
+            <div className="space-y-8">
+              <div>
+                <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+                  Wellness & Sports
+                </Badge>
+                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                  Endless Activities for Every Lifestyle
+                </h3>
+                <p className="text-secondary-600 leading-relaxed text-lg">
+                  Koh Phangan is more than just beautiful beaches — it's a hub
+                  for wellness, sports, and adventure. The island offers
+                  world-class yoga studios, Muay Thai training camps, tennis
+                  courts, fully equipped gyms, and rejuvenating spas with ice
+                  baths for ultimate recovery. For those who love the ocean, a
+                  wide range of water sports awaits, from snorkeling and diving
+                  to paddleboarding and kayaking. Whether you seek active
+                  living, relaxation, or a mix of both, Koh Phangan's diverse
+                  activities ensure there's always something exciting to enjoy
+                  all year round.
+                </p>
+              </div>
             </div>
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-luxury">
+                <img
+                  src="/building-amenities-pool.png"
+                  alt="Activities and wellness"
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
 
+          {/* Infrastructure */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-luxury">
+                <img
+                  src="/luxury-apartment-interior.png"
+                  alt="Modern infrastructure"
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div>
+                <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+                  Modern Living
+                </Badge>
+                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                  Fully Developed Infrastructure
+                </h3>
+                <p className="text-secondary-600 leading-relaxed text-lg">
+                  Koh Phangan offers all the essentials for comfortable
+                  year-round living. The island is home to modern hospitals and
+                  private clinics providing quality medical care, international
+                  and local schools for families, and a variety of supermarkets
+                  and fresh markets for everyday shopping. Whether you're here
+                  short-term or planning to settle down, the well-developed
+                  infrastructure ensures convenience, safety, and a high
+                  standard of living in a tropical paradise.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Events */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
+            <div className="space-y-8">
+              <div>
+                <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+                  Entertainment & Culture
+                </Badge>
+                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                  Vibrant Year-Round Events
+                </h3>
+                <p className="text-secondary-600 leading-relaxed text-lg">
+                  Koh Phangan is alive with activities and entertainment
+                  throughout the year. The island hosts a wide range of events,
+                  from lively parties, concerts, and festivals to inspiring
+                  business meetings, workshops, and networking gatherings.
+                  Families can also enjoy a variety of children's activities and
+                  community events, making the island a welcoming destination
+                  for all ages. This dynamic mix of leisure, culture, and
+                  professional opportunities ensures there's always something
+                  exciting happening on Koh Phangan.
+                </p>
+              </div>
+            </div>
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
                   src="/creative-classroom-learning.png"
-                  alt="Luxury tropical lifestyle"
+                  alt="Events and entertainment"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
+              </div>
+            </div>
+          </div>
+
+          {/* Transport */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-luxury">
+                <img
+                  src="/tropical-palm-resort.png"
+                  alt="Transport infrastructure"
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div>
+                <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+                  Connectivity
+                </Badge>
+                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                  Convenient Transport Infrastructure
+                </h3>
+                <p className="text-secondary-600 leading-relaxed text-lg">
+                  Getting around Koh Phangan is simple and hassle-free thanks to
+                  its well-established transport network. Taxis and local
+                  transport services are readily available, while car and
+                  motorbike rentals offer the freedom to explore at your own
+                  pace. The island is also connected to the mainland and nearby
+                  islands through regular ferry services, making travel to and
+                  from Koh Samui, Koh Tao, and the Thai mainland easy and
+                  convenient. Whether for daily commuting or island-hopping
+                  adventures, Koh Phangan's transport options ensure smooth and
+                  accessible travel.
+                </p>
               </div>
             </div>
           </div>
@@ -522,12 +754,14 @@ export default function LandingPage() {
                 2
               </div>
               <h3 className="font-display text-2xl font-bold mb-6 text-secondary-700">
-                Investment Security
+                Project & Permitting Documentation
               </h3>
               <p className="text-secondary-600 leading-relaxed text-lg">
-                With four active development projects and partnerships with
-                experienced investors, we provide robust financial backing and
-                proven expertise in luxury tropical real estate.
+                We hold all required permits and approvals, fully compliant with
+                the regulations and standards set by Thai authorities. This
+                ensures the project is legally secure, transparent, and ready
+                for smooth development without delays — giving investors
+                complete confidence in their investment.
               </p>
             </div>
 
@@ -537,12 +771,67 @@ export default function LandingPage() {
                 3
               </div>
               <h3 className="font-display text-2xl font-bold mb-6 text-secondary-700">
-                Complete Documentation
+                Ownership Rights
               </h3>
               <p className="text-secondary-600 leading-relaxed text-lg">
-                All necessary permits and documentation are secured in full
-                compliance with Thai regulatory standards, ensuring seamless
-                ownership transfer and legal protection.
+                All our properties are sold with full freehold ownership,
+                granting buyers complete and unconditional rights. This ensures
+                long-term security, full control over the asset, and the freedom
+                to manage, sell, or lease the property without restrictions.
+              </p>
+            </div>
+          </div>
+
+          {/* Second row of columns */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
+            {/* Column 4 */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary-600 to-secondary-700 text-white rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-10 group-hover:scale-110 transition-transform duration-300 shadow-luxury">
+                4
+              </div>
+              <h3 className="font-display text-2xl font-bold mb-6 text-secondary-700">
+                Impeccable Maintenance
+              </h3>
+              <p className="text-secondary-600 leading-relaxed text-lg">
+                Our properties are kept in top condition through regular
+                cleaning, routine technical inspections, and ongoing pool and
+                garden care. Every detail is professionally maintained to ensure
+                lasting quality, comfort, and appeal for both residents and
+                guests.
+              </p>
+            </div>
+
+            {/* Column 5 */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary-600 to-secondary-700 text-white rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-10 group-hover:scale-110 transition-transform duration-300 shadow-luxury">
+                5
+              </div>
+              <h3 className="font-display text-2xl font-bold mb-6 text-secondary-700">
+                Financial Transparency
+              </h3>
+              <p className="text-secondary-600 leading-relaxed text-lg">
+                We provide clear monthly reports and maintain open, convenient
+                communication with property owners. This ensures you're always
+                informed about your investment's performance and can make
+                confident, data-backed decisions.
+              </p>
+            </div>
+
+            {/* Column 6 */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary-600 to-secondary-700 text-white rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-10 group-hover:scale-110 transition-transform duration-300 shadow-luxury">
+                6
+              </div>
+              <h3 className="font-display text-2xl font-bold mb-6 text-secondary-700">
+                End-to-End Rental Operations
+              </h3>
+              <p className="text-secondary-600 leading-relaxed text-lg">
+                We take care of every aspect of rental operations, from handling
+                tenant requests and coordinating with service providers to
+                managing guest check-ins and check-outs and arranging cleaning
+                services. Our team is always available, ensuring smooth
+                communication and a seamless experience for both owners and
+                guests.
               </p>
             </div>
           </div>
