@@ -33,29 +33,19 @@ export default function LandingPage() {
   // Image gallery data
   const galleryImages = [
     {
-      src: "/images/examples/specialized-sustainability-analyzer-original.png",
+      src: "/picture-1.jpg",
       alt: "Luxury beachfront villa",
       title: "Beachfront Villa",
     },
     {
-      src: "/luxury-apartment-interior.png",
+      src: "/picture-2.jpg",
       alt: "Premium interior design",
       title: "Premium Interiors",
     },
     {
-      src: "/building-amenities-pool.png",
+      src: "/picture-3.jpg",
       alt: "Resort-style amenities",
       title: "Resort Amenities",
-    },
-    {
-      src: "/tropical-palm-resort.png",
-      alt: "Tropical paradise living",
-      title: "Paradise Living",
-    },
-    {
-      src: "/creative-classroom-learning.png",
-      alt: "Modern lifestyle spaces",
-      title: "Modern Spaces",
     },
   ];
 
@@ -142,7 +132,7 @@ export default function LandingPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/tropical-palm-resort.png')`,
+            backgroundImage: `url('/hero-image.jpg')`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/50"></div>
