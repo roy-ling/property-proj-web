@@ -16,7 +16,7 @@ import { useState } from "react";
 
 // Swiper imports
 import type { Swiper as SwiperType } from "swiper";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Swiper styles
@@ -193,10 +193,10 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="relative mb-12">
+          <div className="relative mb-12 -mx-4">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={24}
+              spaceBetween={16}
               slidesPerView={1}
               navigation={{
                 prevEl: ".gallery-prev",
@@ -232,7 +232,7 @@ export default function LandingPage() {
                       <img
                         src={image.src || "/placeholder.svg"}
                         alt={image.alt}
-                        className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full aspect-[9/16] object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -375,153 +375,153 @@ export default function LandingPage() {
 
       {/* Section 4 - Mixed Content */}
       {/* Property details section featuring specifications and interior image carousel */}
-      {/* <section id="properties" className="py-24 bg-white">
+      <section id="properties" className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          {/* Property Specifications */}
+          {/* Property Specifications
       {/* Grid layout for property details and interior images */}
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
-        <div className="space-y-8 animate-slide-in">
-          <div>
-            <Badge className="mb-4 bg-primary-100 text-secondary-700 border-primary-200 px-4 py-2 text-sm font-medium">
-          Property Details
-            </Badge>
-            <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
-          Premium Specifications
-            </h3>
-          </div>
-          {/* Property specifications list with living areas */}
-      {/* <div className="space-y-6">
-            <div className="flex justify-between items-center py-4 border-b border-primary-200">
-          <span className="font-medium text-secondary-600">
-            Total Living Area
-          </span>
-          <span className="font-bold text-xl text-secondary-700">
-            97.05 M²
-          </span>
-            </div>
-            <div className="flex justify-between items-center py-4 border-b border-primary-200">
-          <span className="font-medium text-secondary-600">
-            Terrace Area
-          </span>
-          <span className="font-bold text-xl text-secondary-700">
-            24.95 M²
-          </span>
-            </div>
-            <div className="flex justify-between items-center py-4 border-b border-primary-200">
-          <span className="font-medium text-secondary-600">
-            Floor Area
-          </span>
-          <span className="font-bold text-xl text-secondary-700">
-            77.75 M²
-          </span>
-            </div>
-          </div>
-          {/* Call-to-action button for floor plans */}
-      {/* <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
-            View Detailed Floor Plans
-          </Button>
-        </div>
-
-        {/* Interior images carousel with fade effect */}
-      {/* <div className="relative">
-          <div className="overflow-hidden rounded-2xl shadow-luxury">
-            <Swiper
-          modules={[Navigation, EffectFade]}
-          effect="fade"
-          navigation={{
-            prevEl: ".interior-prev",
-            nextEl: ".interior-next",
-          }}
-          onSwiper={setInteriorSwiper}
-          className="interior-swiper h-96"
-            >
-          {interiorImages.map((image, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative h-full">
-            <img
-              src={image.src || "/placeholder.svg"}
-              alt={image.alt}
-              className="w-full h-full object-cover"
-            />
-            {/* Image title overlay */}
-      {/* <div className="absolute bottom-6 left-6 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
-              {image.title}
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+            <div className="space-y-8 animate-slide-in">
+              <div>
+                <Badge className="mb-4 bg-primary-100 text-secondary-700 border-primary-200 px-4 py-2 text-sm font-medium">
+                  Property Details
+                </Badge>
+                <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                  Premium Specifications
+                </h3>
               </div>
-            </SwiperSlide>
-          ))}
-            </Swiper>
-          </div>
+              {/* Property specifications list with living areas */}
+              <div className="space-y-6">
+                <div className="flex justify-between items-center py-4 border-b border-primary-200">
+                  <span className="font-medium text-secondary-600">
+                    Total Living Area
+                  </span>
+                  <span className="font-bold text-xl text-secondary-700">
+                    97.05 M²
+                  </span>
+                </div>
+                <div className="flex justify-between items-center py-4 border-b border-primary-200">
+                  <span className="font-medium text-secondary-600">
+                    Terrace Area
+                  </span>
+                  <span className="font-bold text-xl text-secondary-700">
+                    24.95 M²
+                  </span>
+                </div>
+                <div className="flex justify-between items-center py-4 border-b border-primary-200">
+                  <span className="font-medium text-secondary-600">
+                    Floor Area
+                  </span>
+                  <span className="font-bold text-xl text-secondary-700">
+                    77.75 M²
+                  </span>
+                </div>
+              </div>
+              {/* Call-to-action button for floor plans */}
+              <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
+                View Detailed Floor Plans
+              </Button>
+            </div>
 
-          {/* Navigation buttons for interior carousel */}
-      {/* <Button
-            size="icon"
-            variant="outline"
-            className="interior-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
-          >
-            <ChevronLeft className="w-5 h-5 text-secondary-600" />
-          </Button>
-          <Button
-            size="icon"
-            variant="outline"
-            className="interior-next absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
-          >
-            <ChevronRight className="w-5 h-5 text-secondary-600" />
-          </Button>
+            {/* Interior images carousel with fade effect */}
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-luxury">
+                <Swiper
+                  modules={[Navigation, EffectFade]}
+                  effect="fade"
+                  navigation={{
+                    prevEl: ".interior-prev",
+                    nextEl: ".interior-next",
+                  }}
+                  onSwiper={setInteriorSwiper}
+                  className="interior-swiper h-96"
+                >
+                  {interiorImages.map((image, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="relative h-full">
+                        <img
+                          src={image.src || "/placeholder.svg"}
+                          alt={image.alt}
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Image title overlay */}
+                        <div className="absolute bottom-6 left-6 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
+                          {image.title}
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
 
-          {/* Thumbnail navigation for quick image selection */}
-      {/* <div className="flex space-x-3 mt-6 justify-center">
-            {interiorImages.map((image, index) => (
-          <button
-            key={index}
-            className="w-20 h-16 rounded-lg overflow-hidden border-2 border-primary-200 hover:border-accent-300 transition-all duration-200"
-            onClick={() => interiorSwiper?.slideTo(index)}
-          >
-            <img
-              src={image.src || "/placeholder.svg"}
-              alt={image.alt}
-              className="w-full h-full object-cover"
-            />
-          </button>
-            ))}
-          </div>
-        </div>
+              {/* Navigation buttons for interior carousel */}
+              <Button
+                size="icon"
+                variant="outline"
+                className="interior-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
+              >
+                <ChevronLeft className="w-5 h-5 text-secondary-600" />
+              </Button>
+              <Button
+                size="icon"
+                variant="outline"
+                className="interior-next absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
+              >
+                <ChevronRight className="w-5 h-5 text-secondary-600" />
+              </Button>
+
+              {/* Thumbnail navigation for quick image selection */}
+              <div className="flex space-x-3 mt-6 justify-center">
+                {interiorImages.map((image, index) => (
+                  <button
+                    key={index}
+                    className="w-20 h-16 rounded-lg overflow-hidden border-2 border-primary-200 hover:border-accent-300 transition-all duration-200"
+                    onClick={() => interiorSwiper?.slideTo(index)}
+                  >
+                    <img
+                      src={image.src || "/placeholder.svg"}
+                      alt={image.alt}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Lifestyle Section */}
-      {/* Two-column layout for lifestyle content and image */}
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Lifestyle description with call-to-action */}
-      {/* <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-12 rounded-2xl">
-          <Badge className="mb-6 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
-            Luxury Lifestyle
-          </Badge>
-          <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
-            Tropical Paradise Living
-          </h3>
-          <p className="text-secondary-600 mb-8 leading-relaxed text-lg">
-            Experience the ultimate in tropical luxury living with our
-            thoughtfully designed spaces that seamlessly blend indoor and
-            outdoor living, creating your perfect sanctuary in paradise.
-          </p>
-          <Button className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
-            Discover More
-          </Button>
-        </div>
+          {/* Two-column layout for lifestyle content and image */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Lifestyle description with call-to-action */}
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-12 rounded-2xl">
+              <Badge className="mb-6 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
+                Luxury Lifestyle
+              </Badge>
+              <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
+                Tropical Paradise Living
+              </h3>
+              <p className="text-secondary-600 mb-8 leading-relaxed text-lg">
+                Experience the ultimate in tropical luxury living with our
+                thoughtfully designed spaces that seamlessly blend indoor and
+                outdoor living, creating your perfect sanctuary in paradise.
+              </p>
+              <Button className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
+                Discover More
+              </Button>
+            </div>
 
-        {/* Lifestyle image with hover effects */}
-      {/* <div className="relative">
-          <div className="overflow-hidden rounded-2xl shadow-luxury">
-            <img
-          src="/creative-classroom-learning.png"
-          alt="Luxury tropical lifestyle"
-          className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
-            />
+            {/* Lifestyle image with hover effects */}
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-luxury">
+                <img
+                  src="/creative-classroom-learning.png"
+                  alt="Luxury tropical lifestyle"
+                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
           </div>
         </div>
-          </div>
-        </div>
-      </section> */}
+      </section>
 
       {/* Section 4.5 - Lifestyle Sections */}
       <section className="py-24 bg-gradient-to-b from-primary-50 to-white">
@@ -564,7 +564,7 @@ export default function LandingPage() {
 
           {/* Endless Activities */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 order-2 lg:order-1">
               <div>
                 <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
                   Wellness & Sports
@@ -586,7 +586,7 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
                   src="/building-amenities-pool.png"
@@ -632,7 +632,7 @@ export default function LandingPage() {
 
           {/* Events */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 order-2 lg:order-1">
               <div>
                 <Badge className="mb-4 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
                   Entertainment & Culture
@@ -653,7 +653,7 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
                   src="/creative-classroom-learning.png"
