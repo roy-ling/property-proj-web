@@ -170,6 +170,198 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Section 1.7 - Interactive Aerial View */}
+      <section className="relative min-h-screen overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/chaloklum-bay-aerial.jpg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+        </div>
+
+        {/* Interactive Content */}
+        <div className="relative z-10 container mx-auto px-6 py-24 min-h-screen flex items-center">
+          <div className="w-full">
+            {/* Main Title */}
+            <div className="text-center mb-16">
+              <Badge className="mb-4 bg-white/90 text-secondary-700 border-white/50 px-4 py-2 text-sm font-medium">
+                Prime Location
+              </Badge>
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
+                Chaloklum Fisherman Village
+              </h2>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+                Discover the heart of Koh Phangan's most desirable beachfront
+                location
+              </p>
+            </div>
+
+            {/* Interactive Points */}
+            <div className="relative w-full max-w-6xl mx-auto">
+              {/* Point 1 - Beach Area */}
+              <div className="absolute top-[60%] left-[30%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-6 h-6 bg-accent-500 rounded-full border-4 border-white shadow-luxury animate-pulse group-hover:animate-none group-hover:scale-125 transition-all duration-300"></div>
+                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-luxury min-w-[280px]">
+                    <h4 className="font-display font-bold text-lg text-secondary-700 mb-2">
+                      Pristine Beach Access
+                    </h4>
+                    <p className="text-secondary-600 text-sm leading-relaxed">
+                      Direct access to crystal-clear waters and white sand
+                      beaches, perfect for swimming and water sports year-round.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Point 2 - Village Center */}
+              <div className="absolute top-[35%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-6 h-6 bg-accent-500 rounded-full border-4 border-white shadow-luxury animate-pulse group-hover:animate-none group-hover:scale-125 transition-all duration-300"></div>
+                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-luxury min-w-[280px]">
+                    <h4 className="font-display font-bold text-lg text-secondary-700 mb-2">
+                      Village Center
+                    </h4>
+                    <p className="text-secondary-600 text-sm leading-relaxed">
+                      Heart of Chaloklum with authentic restaurants, local
+                      markets, and traditional fisherman culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Point 3 - Property Location */}
+              <div className="absolute top-[45%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-8 h-8 bg-yellow-500 rounded-full border-4 border-white shadow-luxury animate-pulse group-hover:animate-none group-hover:scale-125 transition-all duration-300 flex items-center justify-center">
+                  <Home className="w-4 h-4 text-white" />
+                </div>
+                <div className="absolute top-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-luxury min-w-[300px]">
+                    <h4 className="font-display font-bold text-lg text-accent-600 mb-2">
+                      🏠 Your Investment Property
+                    </h4>
+                    <p className="text-secondary-600 text-sm leading-relaxed">
+                      Prime beachfront location with 11 exclusive units. Perfect
+                      positioning for maximum rental yield and capital
+                      appreciation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Point 4 - Jungle/Nature */}
+              <div className="absolute top-[25%] left-[70%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-6 h-6 bg-green-500 rounded-full border-4 border-white shadow-luxury animate-pulse group-hover:animate-none group-hover:scale-125 transition-all duration-300"></div>
+                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-luxury min-w-[280px]">
+                    <h4 className="font-display font-bold text-lg text-secondary-700 mb-2">
+                      Tropical Nature
+                    </h4>
+                    <p className="text-secondary-600 text-sm leading-relaxed">
+                      Lush tropical jungle and hiking trails, offering perfect
+                      balance between beach life and nature exploration.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Point 5 - Marina/Pier */}
+              <div className="absolute top-[55%] left-[65%] transform -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+                <div className="w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-luxury animate-pulse group-hover:animate-none group-hover:scale-125 transition-all duration-300"></div>
+                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-luxury min-w-[280px]">
+                    <h4 className="font-display font-bold text-lg text-secondary-700 mb-2">
+                      Marina & Pier
+                    </h4>
+                    <p className="text-secondary-600 text-sm leading-relaxed">
+                      Local fishing pier and boat services for island hopping to
+                      Koh Samui, Koh Tao, and mainland Thailand.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile-friendly legend */}
+              <div className="md:hidden mt-16 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-luxury">
+                <h3 className="font-display font-bold text-xl text-secondary-700 mb-4">
+                  Location Highlights
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-4 h-4 bg-accent-500 rounded-full mt-1 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-medium text-secondary-700">
+                        Pristine Beach Access
+                      </h4>
+                      <p className="text-sm text-secondary-600">
+                        Crystal-clear waters and white sand beaches
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-4 h-4 bg-yellow-500 rounded-full mt-1 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-medium text-accent-600">
+                        Your Investment Property
+                      </h4>
+                      <p className="text-sm text-secondary-600">
+                        11 exclusive beachfront units
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-4 h-4 bg-accent-500 rounded-full mt-1 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-medium text-secondary-700">
+                        Village Center
+                      </h4>
+                      <p className="text-sm text-secondary-600">
+                        Restaurants, markets, and local culture
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-4 h-4 bg-green-500 rounded-full mt-1 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-medium text-secondary-700">
+                        Tropical Nature
+                      </h4>
+                      <p className="text-sm text-secondary-600">
+                        Jungle trails and natural beauty
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-4 h-4 bg-blue-500 rounded-full mt-1 flex-shrink-0"></div>
+                    <div>
+                      <h4 className="font-medium text-secondary-700">
+                        Marina & Pier
+                      </h4>
+                      <p className="text-sm text-secondary-600">
+                        Boat services and island connections
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20">
+          <Button
+            size="lg"
+            className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300"
+          >
+            Explore This Location
+          </Button>
+        </div>
+      </section>
+
       {/* Section 2 - Image Gallery Carousel */}
       <section
         id="gallery"
