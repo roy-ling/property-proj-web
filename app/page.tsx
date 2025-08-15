@@ -33,19 +33,19 @@ export default function LandingPage() {
   // Image gallery data
   const galleryImages = [
     {
-      src: "/picture-1.jpg",
+      src: "/slide-1.jpg",
       alt: "Luxury beachfront villa",
       title: "Beachfront Villa",
     },
     {
-      src: "/picture-2.jpg",
-      alt: "Premium interior design",
-      title: "Premium Interiors",
-    },
-    {
-      src: "/picture-3.jpg",
+      src: "/slide-2.jpg",
       alt: "Resort-style amenities",
       title: "Resort Amenities",
+    },
+    {
+      src: "/slide-3.jpg",
+      alt: "Premium interior design",
+      title: "Premium Interiors",
     },
   ];
 
@@ -384,79 +384,18 @@ export default function LandingPage() {
               lifestyle appeal with solid investment returns.
             </p>
           </div>
-
-          <div className="relative mb-12 -mx-4">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={16}
-              slidesPerView={1}
-              navigation={{
-                prevEl: ".gallery-prev",
-                nextEl: ".gallery-next",
-              }}
-              pagination={{
-                el: ".gallery-pagination",
-                clickable: true,
-                bulletClass: "swiper-pagination-bullet gallery-bullet",
-                bulletActiveClass:
-                  "swiper-pagination-bullet-active gallery-bullet-active",
-              }}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-              }}
-              breakpoints={{
-                768: {
-                  slidesPerView: 2,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              }}
-              onSwiper={setGallerySwiper}
-              className="gallery-swiper rounded-2xl shadow-luxury overflow-visible"
+        </div>
+        {/* Property Video */}
+        <div className="relative mb-12">
+          <div className="overflow-hidden shadow-luxury">
+            <video
+              className="w-full h-auto max-h-[600px] object-cover"
+              controls
             >
-              {galleryImages.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <Card className="overflow-hidden border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group h-full">
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={image.src || "/placeholder.svg"}
-                        alt={image.alt}
-                        className="w-full aspect-[9/16] object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h3 className="font-display font-bold text-lg">
-                          {image.title}
-                        </h3>
-                      </div>
-                    </div>
-                  </Card>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            {/* Custom Navigation Buttons */}
-            <Button
-              size="icon"
-              variant="outline"
-              className="gallery-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
-            >
-              <ChevronLeft className="w-5 h-5 text-secondary-600" />
-            </Button>
-            <Button
-              size="icon"
-              variant="outline"
-              className="gallery-next absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
-            >
-              <ChevronRight className="w-5 h-5 text-secondary-600" />
-            </Button>
+              <source src="/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-
-          {/* Custom Pagination */}
-          <div className="gallery-pagination flex items-center justify-center space-x-3 mb-8"></div>
         </div>
       </section>
 
@@ -562,6 +501,77 @@ export default function LandingPage() {
               </div>
             </Card>
           </div>
+          <div className="relative mt-12 mb-6 -mx-4">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={16}
+              slidesPerView={1}
+              navigation={{
+                prevEl: ".gallery-prev",
+                nextEl: ".gallery-next",
+              }}
+              pagination={{
+                el: ".gallery-pagination",
+                clickable: true,
+                bulletClass: "swiper-pagination-bullet gallery-bullet",
+                bulletActiveClass:
+                  "swiper-pagination-bullet-active gallery-bullet-active",
+              }}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              }}
+              onSwiper={setGallerySwiper}
+              className="gallery-swiper rounded-2xl shadow-luxury overflow-visible"
+            >
+              {galleryImages.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <Card className="overflow-hidden border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group h-full">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={image.src || "/placeholder.svg"}
+                        alt={image.alt}
+                        className="w-full aspect-[9/16] object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 className="font-display font-bold text-lg">
+                          {image.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </Card>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Custom Navigation Buttons */}
+            <Button
+              size="icon"
+              variant="outline"
+              className="gallery-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
+            >
+              <ChevronLeft className="w-5 h-5 text-secondary-600" />
+            </Button>
+            <Button
+              size="icon"
+              variant="outline"
+              className="gallery-next absolute right-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
+            >
+              <ChevronRight className="w-5 h-5 text-secondary-600" />
+            </Button>
+          </div>
+          <div className="gallery-pagination flex items-center justify-center space-x-3 mb-8"></div>
+          {/* Custom Pagination */}
         </div>
       </section>
 
@@ -676,39 +686,6 @@ export default function LandingPage() {
                     />
                   </button>
                 ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Lifestyle Section */}
-          {/* Two-column layout for lifestyle content and image */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Lifestyle description with call-to-action */}
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 p-12 rounded-2xl">
-              <Badge className="mb-6 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
-                Luxury Lifestyle
-              </Badge>
-              <h3 className="font-display text-3xl font-bold mb-6 text-secondary-700">
-                Tropical Paradise Living
-              </h3>
-              <p className="text-secondary-600 mb-8 leading-relaxed text-lg">
-                Experience the ultimate in tropical luxury living with our
-                thoughtfully designed spaces that seamlessly blend indoor and
-                outdoor living, creating your perfect sanctuary in paradise.
-              </p>
-              <Button className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
-                Discover More
-              </Button>
-            </div>
-
-            {/* Lifestyle image with hover effects */}
-            <div className="relative">
-              <div className="overflow-hidden rounded-2xl shadow-luxury">
-                <img
-                  src="/creative-classroom-learning.png"
-                  alt="Luxury tropical lifestyle"
-                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
-                />
               </div>
             </div>
           </div>
