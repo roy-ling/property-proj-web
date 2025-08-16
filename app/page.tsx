@@ -689,6 +689,22 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col mb-5">
+            <h3 className="font-display text-4xl text-center font-bold mb-4 text-secondary-700">
+              360° of Chaloklum
+            </h3>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="overflow-hidden shadow-luxury">
+            <video
+              className="w-full h-auto max-h-[600px] object-cover"
+              controls
+            >
+              <source src="/video-2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </section>
 
@@ -700,7 +716,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
-                  src="/tropical-palm-resort.png"
+                  src="/lifestyle-1.jpg"
                   alt="Cafés, bars, and restaurants"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -758,7 +774,7 @@ export default function LandingPage() {
             <div className="relative order-1 lg:order-2">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
-                  src="/building-amenities-pool.png"
+                  src="/lifestyle-2.jpg"
                   alt="Activities and wellness"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -771,7 +787,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
-                  src="/luxury-apartment-interior.png"
+                  src="/lifestyle-3.jpg"
                   alt="Modern infrastructure"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -825,7 +841,7 @@ export default function LandingPage() {
             <div className="relative order-1 lg:order-2">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
-                  src="/creative-classroom-learning.png"
+                  src="/lifestyle-4.jpg"
                   alt="Events and entertainment"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -838,7 +854,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
-                  src="/tropical-palm-resort.png"
+                  src="/lifestyle-5.jpg"
                   alt="Transport infrastructure"
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                 />
