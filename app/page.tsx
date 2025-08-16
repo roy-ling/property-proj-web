@@ -156,13 +156,15 @@ export default function LandingPage() {
 
         {/* Floating WhatsApp Button */}
         <div className="fixed bottom-8 right-8 z-50">
-          <Button
-            size="lg"
-            className="rounded-full bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-luxury-hover transition-all duration-300 px-6 py-4"
-          >
-            <MessageCircle className="w-6 h-6 mr-2" />
-            <span className="font-medium">WhatsApp</span>
-          </Button>
+          <a href="https://wa.me/+66818015303" target="_blank">
+            <Button
+              size="lg"
+              className="rounded-full bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-luxury-hover transition-all duration-300 px-6 py-4"
+            >
+              <MessageCircle className="w-6 h-6 mr-2" />
+              <span className="font-medium">WhatsApp</span>
+            </Button>
+          </a>
         </div>
       </section>
 
