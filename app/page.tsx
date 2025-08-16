@@ -16,7 +16,7 @@ import { useState } from "react";
 
 // Swiper imports
 import type { Swiper as SwiperType } from "swiper";
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Swiper styles
@@ -76,7 +76,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background font-sans">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-primary-200 z-50 shadow-card">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-primary-200 z-50 shadow-xl">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -84,7 +84,7 @@ export default function LandingPage() {
                 <MapPin className="w-5 h-5 text-white" />
               </div>
               <div className="font-display font-bold text-xl text-secondary-600">
-                Paradise Estates
+                KOH PHANGAN
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -142,12 +142,14 @@ export default function LandingPage() {
                   Welcome to luxury tropical paradise
                 </span>
               </h1>
-              <Button
-                size="lg"
-                className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-12 py-6 text-xl rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300"
-              >
-                Explore Properties
-              </Button>
+              <a href="#aerial-view">
+                <Button
+                  size="lg"
+                  className="bg-accent-500 hover:bg-accent-600 text-white font-medium px-12 py-6 text-xl rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300"
+                >
+                  Explore Properties
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -165,7 +167,10 @@ export default function LandingPage() {
       </section>
 
       {/* Section 1.7 - Interactive Aerial View */}
-      <section className="relative min-h-screen overflow-hidden">
+      <section
+        className="relative min-h-screen overflow-hidden"
+        id="aerial-view"
+      >
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -575,7 +580,8 @@ export default function LandingPage() {
         <div className="container mx-auto px-6">
           {/* Property Specifications
       {/* Grid layout for property details and interior images */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+          {/* Property specifications section */}
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
             <div className="space-y-8 animate-slide-in">
               <div>
                 <Badge className="mb-4 bg-primary-100 text-secondary-700 border-primary-200 px-4 py-2 text-sm font-medium">
@@ -586,7 +592,7 @@ export default function LandingPage() {
                 </h3>
               </div>
               {/* Property specifications list with living areas */}
-              <div className="space-y-6">
+          {/*    <div className="space-y-6">
                 <div className="flex justify-between items-center py-4 border-b border-primary-200">
                   <span className="font-medium text-secondary-600">
                     Total Living Area
@@ -613,13 +619,13 @@ export default function LandingPage() {
                 </div>
               </div>
               {/* Call-to-action button for floor plans */}
-              <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
+          {/*    <Button className="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-4 rounded-lg shadow-luxury hover:shadow-luxury-hover transition-all duration-300">
                 View Detailed Floor Plans
               </Button>
             </div>
 
             {/* Interior images carousel with fade effect */}
-            <div className="relative">
+          {/*  <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <Swiper
                   modules={[Navigation, EffectFade]}
@@ -640,7 +646,7 @@ export default function LandingPage() {
                           className="w-full h-full object-cover"
                         />
                         {/* Image title overlay */}
-                        <div className="absolute bottom-6 left-6 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
+          {/*              <div className="absolute bottom-6 left-6 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
                           {image.title}
                         </div>
                       </div>
@@ -650,7 +656,7 @@ export default function LandingPage() {
               </div>
 
               {/* Navigation buttons for interior carousel */}
-              <Button
+          {/*    <Button
                 size="icon"
                 variant="outline"
                 className="interior-prev absolute left-6 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white border-primary-200 shadow-card hover:shadow-card-hover transition-all duration-200"
@@ -666,7 +672,7 @@ export default function LandingPage() {
               </Button>
 
               {/* Thumbnail navigation for quick image selection */}
-              <div className="flex space-x-3 mt-6 justify-center">
+          {/*    <div className="flex space-x-3 mt-6 justify-center">
                 {interiorImages.map((image, index) => (
                   <button
                     key={index}
@@ -682,7 +688,7 @@ export default function LandingPage() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="flex flex-col mb-5">
             <h3 className="font-display text-4xl text-center font-bold mb-4 text-secondary-700">
               360° of Chaloklum
