@@ -106,12 +106,6 @@ export default function LandingPage() {
               >
                 Properties
               </a>
-              <a
-                href="#contact"
-                className="text-sm font-medium text-secondary-600 hover:text-accent-500 transition-colors duration-200"
-              >
-                Contact
-              </a>
               {/* <div className="flex items-center space-x-4 text-sm text-secondary-500">
                 <div className="flex items-center space-x-1">
                   <Phone className="w-4 h-4" />
@@ -887,10 +881,7 @@ export default function LandingPage() {
       </section>
 
       {/* Section 5 - Safe Experience */}
-      <section
-        id="contact"
-        className="py-24 bg-gradient-to-b from-primary-50 to-white"
-      >
+      <section className="py-24 bg-gradient-to-b from-primary-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-20 animate-fade-in">
             <Badge className="mb-6 bg-accent-100 text-accent-700 border-accent-200 px-4 py-2 text-sm font-medium">
