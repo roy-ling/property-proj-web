@@ -852,7 +852,7 @@ export default function LandingPage() {
           </div>
 
           {/* Transport */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="relative">
               <div className="overflow-hidden rounded-2xl shadow-luxury">
                 <img
@@ -884,7 +884,7 @@ export default function LandingPage() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
